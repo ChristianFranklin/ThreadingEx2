@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace FindSmallest
 {
@@ -32,9 +33,9 @@ namespace FindSmallest
             return smallestSoFar;
         }
 
-
+       
         static void Main()
-        {
+        {   
             Thread t;
             foreach (int[] data in Data)
             {
@@ -46,5 +47,7 @@ namespace FindSmallest
                 t.Start();
             }
         }
+
+        
     }
 }
